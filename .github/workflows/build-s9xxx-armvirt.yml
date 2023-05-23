@@ -8,11 +8,23 @@
 
 name: Build s9xxx armvirt based
 
-on:
-  workflow_dispatch
+#on:
+  #workflow_dispatch
 #  schedule:
 #    - cron: 59 23 * * *
 #  watch:
+#    types: started
+
+on:
+
+  workflow_dispatch:
+
+#  schedule:
+
+#    - cron: 59 23 * * *
+
+#  watch:
+
 #    types: started
 
 env:
