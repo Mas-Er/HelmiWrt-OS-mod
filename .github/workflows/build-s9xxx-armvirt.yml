@@ -9,7 +9,7 @@
 name: Build s9xxx armvirt based
 
 on:
-  workflow_dispatch:
+  workflow_dispatch
 #  schedule:
 #    - cron: 59 23 * * *
 #  watch:
@@ -25,7 +25,7 @@ env:
 
 jobs:
   Build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
